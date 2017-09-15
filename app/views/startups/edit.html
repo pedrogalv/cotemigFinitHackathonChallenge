@@ -1,0 +1,17 @@
+<div ng-show="editStartup">
+  <div class="row">
+    <div class="col-md-12">
+      Editing {{editStartup.name}} ... yada yada
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <button ng-click="save()"> Salvar </button><button ng-click="cancel()"> Cancelar </button>
+    </div>
+  </div>
+</div>
+<div class="row" ng-show="!editStartup">
+  <div class="col-md-12 text-center">
+    Carregando ...
+  </div>
+</div>

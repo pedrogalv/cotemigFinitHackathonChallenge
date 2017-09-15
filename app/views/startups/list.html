@@ -1,0 +1,10 @@
+<div class="row" ng-show="savedStartups">
+  <div class="col-md-12" ng-repeat="item in savedStartups track by item.id">
+    {{item.name}} <button ng-click="edit(item.id)"> Editar </button>
+  </div>
+</div>
+<div class="row" ng-show="!savedStartups">
+  <div class="col-md-12 text-center">
+    Carregando ...
+  </div>
+</div>
